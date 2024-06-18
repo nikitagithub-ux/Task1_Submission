@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #990F4B;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: #D22E6B;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 50%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            color: #FFF;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        select,
+        textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #CCC;
+            border-radius: 4px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .gender-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .gender-label {
+            color: #FFF;
+            margin-right: 10px;
+        }
+
+        .gender-options {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-color: #FFF;
+        }
+
+        textarea {
+            height: 80px;
+        }
+
+        button {
+            padding: 15px;
+            background-color: #FFF;
+            color: #990F4B;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        button:hover {
+            background-color: #E6E6E6;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="your email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="your password" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="your phone number" required>
+
+            <div class="gender-container">
+                <label class="gender-label">Gender:</label>
+                <div class="gender-options">
+                    <div>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+            </div>
+
+            <label for="language">Language:</label>
+            <select id="language" name="language">
+                <option value="" disabled selected>Select language</option>
+                <option value="english">English</option>
+                <option value="spanish">Spanish</option>
+                <option value="french">French</option>
+                <option value="german">German</option>
+            </select>
+
+            <label for="zip">Zip Code:</label>
+            <input type="text" id="zip" name="zip" placeholder="your zip code" required>
+
+            <label for="about">About:</label>
+            <textarea id="about" name="about" placeholder="Write about yourself..." required></textarea>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>

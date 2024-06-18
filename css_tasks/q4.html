@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button{
+            width:100px;
+            height:40px;
+            border-radius: 10px;
+            color: white; 
+            text-align: center;
+        }
+        .content{
+            display:none;
+        }
+        .button:hover + .content{
+            display: block;
+        }
+        .button:hover{
+            width:105px;
+            height:45px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Hoverable Buttons</h1>
+       <div>
+        <div class="button" style="background-color: green;"><a>HOME</a></div>
+        <div class="content"><a>Go to home</a></div>
+       </div><br>
+       <div>
+        <div class="button" style="background-color: blue ;"><a>JAVA</a></div>
+        <div class="content"><a>It is a progamming language</a></div>
+       </div><br>
+       <div>
+        <div class="button" style="background-color: red ;"><a>CSS</a></div>
+        <div class="content"><a>Used for styling</a></div>
+       </div><br>
+       <div>
+        <div class="button" style="background-color: black ;"><a>BOOTSTRAP</a></div>
+        <div class="content"><a>Used for designing purposes</a></div>
+       </div>
+    </nav>
+</body>
+</html>

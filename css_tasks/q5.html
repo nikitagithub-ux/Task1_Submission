@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button{
+            color: rgb(21, 21, 191);
+            background-color: white;
+            width:90px;
+            height:30px;
+            align-content: center;
+            z-index: 1;
+            position: relative;
+            display: inline-block;
+        }
+        .button:hover{
+            color:blueviolet;
+        }
+        .background-block{
+            background-color: black;
+            height: 30px;
+            width: 110px;
+            position: absolute; 
+            top: 50%; 
+            left: 0; 
+            transform: translateY(-50%); 
+        }
+        .container {
+            position: relative;
+            margin: 10px 0;
+        }
+        h1{
+            font:bold;
+            color: blueviolet;
+        }
+        .footer{
+            color: blueviolet;
+        }
+        .main-content{
+            display: flex;
+        }
+        .content{
+            margin-left:20px;
+            flex: 1;
+        }
+        nav{
+            float: left;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: rgba(195, 255, 0, 0.918); height: 350px; width: 40%;" class="main-content" >
+    <nav>
+        <br>
+        <div class="container">
+            <div class="background-block"></div>
+            <div class="button"><a>Home page</a></div> 
+        </div><br>
+        <div class="container">
+            <div class="background-block"></div>
+            <div class="button"><a>Musings</a></div>
+        </div><br>
+        <div class="container">
+            <div class="background-block"></div>
+            <div class="button"><a>My town</a></div>
+        </div><br>
+        <div class="container">
+            <div class="background-block"></div>
+            <div class="button"><a>Links</a></div>
+        </div><br>
+    </nav>
+    <div style="color: blueviolet; font-size: large; font-family:sans-serif; display: inline;" class="content">
+        <h1>My first Styled page</h1>
+        <p>Welcome to my styled page</p>
+        <p>It lacks image but atleast it has style. And it had links, </p>
+        <p>even if they dont go anywhere...</p>
+        <p>There should be more here, but i dont know what yet</p>
+        <p>....................................................................</p>
+        <div class="footer">
+            <p>Made 5 April <i>2004</i></p>
+            <p><i>by myself</i></p>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
