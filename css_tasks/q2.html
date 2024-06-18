@@ -3,36 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        a{
-            padding: 5px;
-            text-decoration:none;
-        }
-        nav{
-            border:1px solid black;
-            width: 100px;
-            padding:5px;
-        }
-        div:hover{
-            background-color: rgb(255, 162, 0);
-        }
-        div{
-            background-color: rgb(0, 221, 255);
-            width: 95px;
-            height:45px;
-        }
-    </style>
+    <title>Q2</title>
 </head>
 <body>
-    <!-- <nav>
-        <a href="">Home</a><a href="">Java</a><a href="">HTML</a><a href="">CSS</a><a href="">element</a>
-    </nav> -->
-    <nav>
-        <div><a href="">Home</a></div>
-        <div><a href="">Java</a></div>
-        <div><a href="">CSS</a></div>
-        <div><a href="">Bootstrap</a></div>
+    <style>
+        .a-nav {
+            border: 1px solid black;
+            padding : 5px;
+            width : 300px;
+        }
+        .a-nav > a {
+            text-decoration: none;
+        }
+
+        .a-nav > div {
+            background-color: lightblue;
+            width : 300px;
+            height: 50px;
+            font-size: 2rem;
+        }
+
+        .a-nav > .active {
+            background-color: yellow;
+        }
+
+        .b-nav {
+            border: 1px solid black;
+            display: flex;
+            width: 22%;
+        } 
+        .b-nav > a {
+            background-color: lightgray;
+            display: inline-block;
+            padding: 20px;
+            margin: 0;
+            border-left: 1px solid blue;
+            border-right: 1px solid blue;
+            text-decoration: none;
+        }
+
+        .b-nav > a:hover {
+            background-color: gray;
+        } 
+    </style>
+    <nav class="a-nav">
+        <div class="active"><a href="#">Home</a></div>
+        <div><a href="#">Java</a></div>
+        <div><a href="#">CSS</a></div>
+        <div><a href="#">HTML</a></div>
+        <div><a href="#">Bootstrap</a></div>
+    </nav>
+    <br><br><br>
+    <nav class="b-nav">
+        <a href="#">Home</a>
+        <a href="#">CSS</a>
+        <a href="#">HTML</a>
+        <a href="#">About</a>
+        <a href="#">Bootstrap</a>
     </nav>
 </body>
 </html>
